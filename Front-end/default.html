@@ -9,6 +9,7 @@
 		<meta name="robots" content="index,follow">
 		<link rel="icon" href="img/simbolo-pequeno.webp" type="image/x-icon" />
 		<link rel="stylesheet" href="css/home.css"/>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 		<!-- Google tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QC926WYLT6">
@@ -20,13 +21,16 @@
 
 			gtag('config', 'G-QC926WYLT6');
 		</script>
-
 	</head>
 	<body>
+		<div class="barra-notificacao">
+			<h3>Consulta a partir de <span>R$30,00</span></h3>
+			<p>Consulte a unidade e o horário do atendimento.</p>
+		</div>
 		<header>
 			<div id="sombra">
 				<div id="titulo">
-					<h1>Cuidado com carinho e amor é aqui na Mutvet</h1>
+					<h1>MUTVET Veterinário <br><span>24 Horas</span></h1>
 					<img src="img/linha.webp" class="linha"><br>
 					<a href="#QuemSomos" ><button class="saibaMais">Saiba Mais</button></a>
 				</div>
@@ -62,7 +66,9 @@
 					<a href="#NossasUnidades" ><button class="saibaMais" data-animeScroll="right">Saiba Mais</button></a>
 				</div>
 			</div>
-			<img id='Pegada' src="img/animacao-pegadas.webp" width="60%">
+			<div id='Pegada'>
+				<img  src="img/animacao-pegadas.webp" width="60%">
+			</div>
 			<div id="NossasUnidades">
 				<h1>Nossas Unidades</h1>
 				<img class="linha" src="img/linha.webp"><br>
@@ -76,7 +82,7 @@
 							Telefones: (11) 3901-0839 / (11) 3901-1063<br>
 							WhatsApp (11) 9 7272-4881<br>
 							E - mail : contatounidadedepirituba@gmail.com</p>
-							<a href="https://api.whatsapp.com/send?phone=5511972724881&text=Olá, gostaria de saber mais referente a mutvet de Pirituba!" ><button class="saibaMais">Fale Conosco</button></a>
+							<a onclick="$('#modal').show()" ><button class="saibaMais">Fale Conosco</button></a>
 					</div>
 				</div>
 				<div id="unidade02" >
@@ -90,7 +96,7 @@
 							WhatsApp:(11) 9 7272-4881<br>
 							E mail : veterinariotaipas@gmail.com
 						</p>
-						<a href="https://api.whatsapp.com/send?phone=5511972724881&text=Olá, gostaria de saber mais referente a mutvet de Taipas!" ><button class="saibaMais" >Fale Conosco</button></a>
+						<a onclick="$('#modal').show()" ><button class="saibaMais" >Fale Conosco</button></a>
 					</div>
 				</div>
 			</div>
@@ -136,19 +142,19 @@
 						<div class="mensagem"><p>“ Fui super bem atendido, profissionais de respeito que mostram confiança no trabalho, de excelente qualidade, e ótimo custo e benefício meu cachorrinho está ótimo, agradeço a todos os profissionais que deram essa super atenção e ao cuidado que tiveram com meu parceirinho, obrigado “</p></div>
 						<img src="img/comentario2.webp"/>
 						<span class="nome">Cristiano B.</span>
-						<span class="data">05/09/2021</span>
+						<span class="data">02/06/2025</span>
 					</li>
 					<li>
 						<div class="mensagem"><p>“ Adorei o atendimento do meu cachorrinho que não estava bem em casa, profissionais muito simpáticos e dedicados, todos os exame que precisou fazer tinha disponível. Só tenho a agradecer. “</p></div>
 						<img src="img/comentario1.webp"/>
 						<span class="nome">Mariana Barbosa</span>
-						<span class="data">28/07/2021</span>
+						<span class="data">09/03/2025</span>
 					</li>
 					<li>
 						<div class="mensagem"><p>“ Ótimo atendimento e atenção aos pets, profissionais de primeira, preço justo em relação a qualidade do atendimento. Só tenho a agradecer “</p></div>
 						<img src="img/cometario3.webp"/>
 						<span class="nome">Cah Martins</span>
-						<span class="data">13/08/2021</span>
+						<span class="data">17/02/2025</span>
 					</li>
 				</ul>
 			</div>		
@@ -169,10 +175,10 @@
 					<ul>
 						<li><h4>Unidade Pirituba 24H</h4></li>
 						<li>Av: Mutinga 652,Pirituba São Paulo</li>
-						<li><a href="https://api.whatsapp.com/send?phone=5511972724881&text=Olá, gostaria de saber mais referente a mutvet de Pirituba!">WhatsApp : (11) 9 7272-4881 </a></li>
+						<li><a href="https://api.whatsapp.com/send?phone=551139011063&text=Olá, gostaria de saber mais referente a mutvet de Pirituba!">WhatsApp : (11) 9 7272-4881 </a></li>
 						<li><h4>Unidade Taipas 24H</h4></li>
 						<li>AV: Raimundo Pereira de Magalhães 10778, Taipas São Paulo</li>
-						<li><a href="https://api.whatsapp.com/send?phone=5511972724881&text=Olá, gostaria de saber mais referente a mutvet de Taipas!">WhatsApp: (11) 9 7272-4881</a></li>
+						<li><a href="https://api.whatsapp.com/send?phone=551139011063&text=Olá, gostaria de saber mais referente a mutvet de Taipas!">WhatsApp: (11) 9 7272-4881</a></li>
 					</ul>
         </li>
         <li class="lista" >
@@ -187,9 +193,21 @@
 			<h5>@mutvet.com.br<br>Todos Direitos Reservados - <a href="https://api.whatsapp.com/send?phone=5511960602586&text=Olá, gostaria de fazer um orçamento.">Desenvolvido por Fábio Vinicios</a></h5>
 		</div>
 		<div id="whatsapp">
-			<a href="https://api.whatsapp.com/send?phone=5511972724881&text=Olá, gostaria de saber mais referente a mutvet!"><img src="img/whatsZapp.webp"/></a>
+			<a onclick="$('#modal').show()"><img src="img/whatsZapp.webp"/> Entre em contato</a>
 		</div>
 	</body>
+	<div id="modal" class="modal" style="display: none;">
+		<div class="fundo" onclick="$('#modal').hide()"></div>
+		<div class="panel-modal">
+			<p>Escolha uma unidade</p>
+			<select id='stUnidade' name="select">
+				<option value="Pirituba" selected>Pirituba</option>
+				<option value="Taipas">Taipas</option>
+			</select><br>
+			<button class="modalButton" onclick="direcWhatsapp()">Entrar em contato</button>
+		</div>
+	</div>
 	<script type="text/javascript" src="js/scroll.js"></script>
 	<script type="text/javascript" src="js/enviarCadastro.js"></script>
+	<script src="js/home.js"></script>
 </html>
